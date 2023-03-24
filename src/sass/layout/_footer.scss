@@ -1,4 +1,57 @@
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width:1200px){
 
+    }
+}
+
+.menus{
+    @media only screen and (min-width:1200px){
+        display: flex;
+        gap: 40px;
+    }
+    
+}
+
+.menus-link{
+    display: flex;
+    font-size: 10px;
+    gap: 20px;
+    list-style: none;
+    @media only screen and (min-width:1200px){
+        font-size: 15px;
+    }
+   
+}
+
+.menus-empresas{
+    display: flex;
+    font-size: 10px;
+    gap: 20px;
+    list-style: none;
+    @media only screen and (min-width:1200px){
+        font-size: 15px;
+    }
+}
+
+.footer-Logo{
+    @media only screen and (min-width:1200px){
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+.footer-iconos{
+    @media only screen and (min-width:1200px){
+        display: flex;
+        gap: 30px;
+    }
+   
+}

@@ -1,3 +1,124 @@
 /* ********* */
 /* @HEADER */
 /* ********* */
+
+.Header-Navbar {
+    display: flex;
+    align-items: center;
+    background-color: map-get($Colores, navbar);
+    width: map-get($medidas , widthgeneral);
+    justify-content: space-around;
+    gap: map-get($medidas , gap2);
+    position: relative;
+    height: map-get($medidas , gap2);
+
+}
+
+.Header-Logo {
+    width: 50px;
+    height: 50px;
+    @media only screen and (min-width:1200px) {
+        width:map-get($medidas , gap2);
+        height: map-get($medidas , gap2);
+        margin-left: 50px;
+
+    }
+}
+
+.Logos {
+    display: flex;
+    gap: 20px;
+
+    @media only screen and (min-width:1200px) {
+        width: 80%;
+        
+
+    }
+}
+
+.Header-Desktop {
+    display: none;
+    list-style: none;
+
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 720px;
+    }
+}
+
+.Liks {
+    text-decoration: none;
+    color: #C5D3E3;
+}
+
+.liks {
+    text-decoration: none;
+    color: black;
+    height: 50px;
+}
+
+.otra-lista {
+    display: none;
+    list-style: none;
+
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        padding-left: 110px;
+        gap: 30px;
+
+
+    }
+}
+
+.Header-desplegable {
+    display: none;
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: map-get($medidas , movil-Top);
+    width: map-get($medidas , widthDesplegables);
+    height: map-get($medidas , heightDesplegables);
+    gap: map-get($medidas , HeaderGap);
+    color: map-get($Colores , baseEcuatoguineano);
+    z-index: 999;
+    transition: display 0.3s ease-in-out;
+}
+
+.Header-despliega {
+    display: none;
+    transform: translateY(-50%);
+}
+
+.Header-Iconologin {
+    width: map-get($medidas , widthIcono);
+    height: map-get($medidas , heightIcono);
+
+    @media only screen and (min-width:1200px) {
+        display: none;
+    }
+}
+
+.Header-iconoHamburguesa {
+    width: map-get($medidas , widthIcono);
+    height: map-get($medidas , heightIcono);
+
+    @media only screen and (min-width:1200px) {
+        display: none;
+    }
+}
+
+input:checked~.Header-desplegable {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: map-get($medidas , heightChecked);
+    padding: map-get($medidas , paddingChecked);
+    background-color: map-get($Colores , baseEcuatoguineano);
+    color: map-get($Colores , LetraNegra);
+}
+
+
+

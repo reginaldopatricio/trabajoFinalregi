@@ -1,0 +1,45 @@
+/* ********* */
+/* @HEADER */
+/* ********* */
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    @media only screen and (min-width:1200px) {
+        flex-direction: row;
+        gap: 100px;
+    }
+}
+
+.Main-imagen1{
+    background: url("/assets/img/smartphone/fiesta.webp");
+    width: 278px;
+    height: 353px;
+    @media only screen and (min-width:1200px){
+        width: 351px;
+        height: 498px;
+    }
+
+}
+
+.Main-texto{
+    padding: 10px;
+    text-align: justify;
+    @media only screen and (min-width:1200px){
+        width: 500px;
+    }
+}
+
+.Main-imagen2{
+    background: url("/assets/img/smartphone/tarta@2x.webp");
+    width: 278px;
+    height: 353px;
+    @media only screen and (min-width:1200px){
+        width: 300px;
+        height: 498px;
+        
+    }
+}
